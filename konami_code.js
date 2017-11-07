@@ -3,8 +3,8 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 function init() {
   var i = 0;
 
-  document.body.addEventListener('keydown', function(e) {
-    var stroke = parseInt(e.detail);
+  document.body.addEventListener('keydown', function(event) {
+    var stroke = parseInt(event.detail);
 
     if (code[i] === stroke) {
       i++;
